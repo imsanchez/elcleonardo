@@ -17,7 +17,7 @@ class RootIndex extends React.Component {
           <div className={style.container}>
             <div className={style.container_image}>
               <Img className={style.portrait} alt={person.name} title={person.name} fluid={person.image.fluid} />
-              <div className={style.caption}>Portrait by Vincent Tullo, 2018.</div>
+              <div className={style.caption}>Portrait by Lelanie Foster, 2019.</div>
             </div>
             
             <div className={style.container_content}>
