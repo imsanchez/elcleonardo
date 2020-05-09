@@ -1,0 +1,36 @@
+.blockquote {
+    overflow: hidden;
+    //min-width: 326px; 
+    width: 100%!important;
+
+    min-width: 268px!important;
+    max-width: none!important; 
+    margin: 0 auto!important;
+    @media screen and (min-width: 425px) {
+        min-width: 320px!important;
+        max-width: 540px!important; 
+    }
+    @media screen and (min-width: 768px) {
+        min-width: 400px!important;
+        max-width: 540px!important; 
+    }
+    @media screen and (min-width: 1024px) {
+        min-width: 450px!important;
+        max-width: 540px!important; 
+    }
+    @media screen and (min-width: 1440px) {
+        min-width: 500px!important;
+        max-width: 540px!important; 
+    }
+    @media screen and (min-width: 2560px) {
+        min-width: 540px!important;
+        max-width: 540px!important; 
+    }
+}
+.wrapper_column {
+    position: relative;
+    display: inline-block;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}

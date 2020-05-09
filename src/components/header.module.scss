@@ -1,0 +1,139 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 1rem 1rem 1rem;
+    @media screen and (min-width: 768px) {
+      padding: 2rem 0 2rem 0;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 4rem 0 4rem 0;
+    }
+    @media screen and (min-width: 2560px) {
+      padding: 5rem 0 5rem 0;
+    }
+}
+.logo {
+    color: #8C7B5E;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: calc(3rem + (80 - 48) * ((100vw - 320px) / (2560 - 320)));
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      margin: 2.5rem auto;
+    }
+}
+
+.navigation {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-size: 1.25rem;
+    background: #fff;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+  }
+  :global .active {
+    transform: translateX(0%);
+  }
+  .mobileClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    & svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .navigationItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigationItem a {
+    width: 100%;
+    display: block;
+    padding: 1.5rem 2rem;
+    color: #717e80;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .navigationItem a:hover {
+    text-decoration: none;
+    color: #353B3C;
+  }
+  .navigationItem a:hover, .navigationItem a:focus, .navigationItem a:visited, .navigationItem a:active, .navigationItem a:focus-within,
+  .mobileButton:hover, .mobileButton:focus, .mobileButton:visited, .mobileButton:active, .mobileButton:focus-within {
+    outline: none;
+  }
+  
+  .mobileButton {
+    position: absolute;
+    top: 3rem; 
+    right: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .mobileButton svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .mobileClose, .mobileButton {
+      display: none;
+    }
+    .navigation {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      min-width: 0;
+      max-width: 100%;
+      height: auto;
+      min-height: 0;
+      max-height: 100px;
+      top: auto;
+      left: auto;
+      background: transparent;
+      transform: none!important;
+    }
+    :global .active {
+      transform: none!important;
+    }
+    .navigationItem {
+      display: inline-flex;
+      align-items: center;
+    }
+    .navigationItem a {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  
